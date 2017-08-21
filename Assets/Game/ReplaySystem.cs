@@ -39,7 +39,7 @@ public class ReplaySystem : MonoBehaviour {
         }
         myRigidBody.isKinematic = true;
         int frame = currentFrame % maxFrame;
-        Debug.Log(currentFrame + " % " + maxFrame + " = " + frame);
+
         transform.position = keyFrames[frame].position;
         transform.rotation = keyFrames[frame].rotation;
     }
